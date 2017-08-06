@@ -45,13 +45,17 @@ type Skip struct {
 
 func (s *Skip) Apply(msg message.Msg) (message.Msg, error) {
 	val := msg.Data().Get(s.Field)
+	match := fmt.Sprintf("%v", s.Match)
 	switch s.Operator {
 	case "==", "eq", "$eq":
-		if reflect.DeepEqual(val, s.Match) {
+		valstr := fmt.Sprintf("%v", val)
+		if reflect.DeepEqual(valstr, match) {
+			fmt.Println("true")
 			return msg, nil
 		}
 	case "=~":
-		if ok, err := regexp.MatchString(s.Match.(string), val.(string)); err != nil || ok {
+		valstr := fmt.Sprintf("%v", val)
+		if ok, err := regexp.MatchString(match, valstr); err != nil || ok {
 			return msg, err
 		}
 	case ">", "gt", "$gt":
@@ -104,6 +108,8 @@ func convertToFloat(in interface{}) (float64, error) {
 		return float64(i), nil
 	case string:
 		return strconv.ParseFloat(i, 0)
+	case int64:
+		return float64(i), nil
 	default:
 		return math.NaN(), WrongTypeError{"float64 or int", fmt.Sprintf("%T", i)}
 	}
