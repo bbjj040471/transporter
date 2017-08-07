@@ -515,10 +515,13 @@ type writeResult struct {
 }
 
 func (n *Node) write(msg message.Msg, off offset.Offset) (message.Msg, error) {
-	if !n.nsFilter.MatchString(msg.Namespace()) {
-		n.l.With("ns", msg.Namespace()).Debugln("message skipped by namespace filter")
-		return msg, nil
-	}
+	fmt.Println("msg:", msg)
+	fmt.Println("node:", n.nsFilter)
+	//	if !n.nsFilter.MatchString(msg.Namespace()) {
+	//		n.l.With("ns", msg.Namespace()).Debugln("message skipped by namespace filter")
+	//		return msg, nil
+	//	}
+	msg = msg.RenameNamespace(n.nsFilter.String())
 	msg, err := n.applyTransforms(msg)
 	if err != nil || msg == nil {
 		return nil, err
@@ -574,10 +577,10 @@ func (n *Node) confirmOffsets() error {
 func (n *Node) applyTransforms(msg message.Msg) (message.Msg, error) {
 	if msg.OP() != ops.Command {
 		for _, transform := range n.transforms {
-			if !transform.NsFilter.MatchString(msg.Namespace()) {
-				n.l.With("transform", transform.Name).With("ns", msg.Namespace()).Debugln("filtered message")
-				continue
-			}
+			//			if !transform.NsFilter.MatchString(msg.Namespace()) {
+			//				n.l.With("transform", transform.Name).With("ns", msg.Namespace()).Debugln("filtered message")
+			//				continue
+			//			}
 			m, err := transform.Fn.Apply(msg)
 			if err != nil {
 				n.l.Errorf("transform function error, %s", err)

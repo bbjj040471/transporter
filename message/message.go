@@ -26,6 +26,7 @@ type Msg interface {
 	Data() data.Data
 	Namespace() string
 	Confirms() chan struct{}
+	RenameNamespace(string) Msg
 }
 
 // From builds a message.Msg specific to an elasticsearch document
@@ -57,6 +58,11 @@ type Base struct {
 	Operation ops.Op
 	MapData   data.Data
 	confirm   chan struct{}
+}
+
+func (m *Base) RenameNamespace(newnamespace string) Msg {
+	m.NS = newnamespace
+	return m
 }
 
 // Timestamp returns the time the object was created in transporter (i.e. it has no correlation
