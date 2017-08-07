@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/compose/transporter/function"
-	_ "github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"github.com/bbjj040471/transporter/function"
+	_ "github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
+	"github.com/bbjj040471/transporter/message/ops"
 )
 
 var errorTests = []struct {

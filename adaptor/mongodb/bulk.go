@@ -4,11 +4,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
+	"github.com/bbjj040471/transporter/message/data"
+	"github.com/bbjj040471/transporter/message/ops"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

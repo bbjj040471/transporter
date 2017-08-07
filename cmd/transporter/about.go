@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/compose/transporter/adaptor"
+	"github.com/bbjj040471/transporter/adaptor"
 )
 
 func runAbout(args []string) error {

@@ -4,8 +4,8 @@
 - VERY IMPORTANT: Go has a required directory structure which the GOPATH needs to point to. Instructions can be found on http://golang.org/doc/code.html or by typing `go help gopath` in terminal.
 - setup the directory structure in $GOPATH
     - `cd $GOPATH; mkdir src pkg bin`
-    - create the github.com path and compose `mkdir -p src/github.com/compose; cd src/github.com/compose`
-    - clone transporter `git clone https://github.com/compose/transporter; cd transporter`
+    - create the github.com path and bbjj040471 `mkdir -p src/github.com/bbjj040471; cd src/github.com/bbjj040471`
+    - clone transporter `git clone https://github.com/bbjj040471/transporter; cd transporter`
     - now you can build with `go build ./cmd/transporter/...`
 
 At this point you should be able to run transporter via `$GOPATH/bin/transporter`,  you may need to add $GOPATH to your PATH environment variable. Something along the lines of `export PATH="$GOPATH/bin:$PATH"` should work.

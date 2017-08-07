@@ -1,8 +1,8 @@
 package function
 
 import (
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
 )
 
 var (

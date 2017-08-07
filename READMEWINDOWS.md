@@ -30,8 +30,8 @@ mkdir pkg bin src
 cd src
 mkdir github.com
 cd github.com
-mkdir compose
-cd compose
+mkdir bbjj040471
+cd bbjj040471
 ```
 
 4) Clone transporter
@@ -39,7 +39,7 @@ cd compose
 We now can download the transporter source into this directory
 
 ```
-git clone https://github.com/compose/transporter
+git clone https://github.com/bbjj040471/transporter
 ```
 
 5) Build the transporter

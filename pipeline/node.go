@@ -17,16 +17,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/mejson"
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
-	"github.com/compose/transporter/offset"
-	"github.com/compose/transporter/pipe"
+	"github.com/bbjj040471/mejson"
+	"github.com/bbjj040471/transporter/adaptor"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/commitlog"
+	"github.com/bbjj040471/transporter/function"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
+	"github.com/bbjj040471/transporter/message/ops"
+	"github.com/bbjj040471/transporter/offset"
+	"github.com/bbjj040471/transporter/pipe"
 )
 
 const (

@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	_ "github.com/compose/transporter/adaptor/all"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/events"
-	"github.com/compose/transporter/offset"
+	"github.com/bbjj040471/transporter/adaptor"
+	_ "github.com/bbjj040471/transporter/adaptor/all"
+	"github.com/bbjj040471/transporter/commitlog"
+	"github.com/bbjj040471/transporter/events"
+	"github.com/bbjj040471/transporter/offset"
 )
 
 // set up some local files

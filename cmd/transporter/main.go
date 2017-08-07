@@ -7,9 +7,9 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	_ "github.com/compose/transporter/adaptor/all"
-	_ "github.com/compose/transporter/function/all"
-	"github.com/compose/transporter/log"
+	_ "github.com/bbjj040471/transporter/adaptor/all"
+	_ "github.com/bbjj040471/transporter/function/all"
+	"github.com/bbjj040471/transporter/log"
 )
 
 const (

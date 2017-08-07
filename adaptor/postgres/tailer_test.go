@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/client"
+	"github.com/bbjj040471/transporter/client"
 )
 
 func addTestReplicationSlot(s *sql.DB) error {

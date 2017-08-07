@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/offset"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/offset"
 	"github.com/olekukonko/tablewriter"
 )
 

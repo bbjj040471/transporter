@@ -3,7 +3,7 @@ package offset
 import (
 	"encoding/binary"
 
-	"github.com/compose/transporter/commitlog"
+	"github.com/bbjj040471/transporter/commitlog"
 )
 
 const (

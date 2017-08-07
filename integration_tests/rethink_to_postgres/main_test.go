@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/compose/transporter/log"
+	"github.com/bbjj040471/transporter/log"
 
 	_ "github.com/lib/pq" // import pq driver
 )

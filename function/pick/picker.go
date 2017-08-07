@@ -1,9 +1,9 @@
 package pick
 
 import (
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
+	"github.com/bbjj040471/transporter/function"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
 )
 
 func init() {

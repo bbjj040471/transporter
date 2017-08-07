@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
+	"github.com/bbjj040471/transporter/adaptor"
+	"github.com/bbjj040471/transporter/adaptor/elasticsearch/clients"
 	// used to call init function for each client to register itself
-	_ "github.com/compose/transporter/adaptor/elasticsearch/clients/all"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
+	_ "github.com/bbjj040471/transporter/adaptor/elasticsearch/clients/all"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/log"
 	version "github.com/hashicorp/go-version"
 )
 

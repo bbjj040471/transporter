@@ -10,7 +10,7 @@ import (
 
 	r "gopkg.in/gorethink/gorethink.v3"
 
-	"github.com/compose/transporter/log"
+	"github.com/bbjj040471/transporter/log"
 )
 
 var (

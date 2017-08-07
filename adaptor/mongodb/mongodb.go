@@ -5,8 +5,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
+	"github.com/bbjj040471/transporter/adaptor"
+	"github.com/bbjj040471/transporter/client"
 )
 
 const (

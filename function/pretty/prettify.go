@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/compose/mejson"
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
+	"github.com/bbjj040471/mejson"
+	"github.com/bbjj040471/transporter/function"
+	"github.com/bbjj040471/transporter/log"
+	"github.com/bbjj040471/transporter/message"
 )
 
 const (

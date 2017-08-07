@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/compose/transporter/log"
+	"github.com/bbjj040471/transporter/log"
 )
 
 const (

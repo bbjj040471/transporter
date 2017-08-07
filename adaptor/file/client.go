@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/compose/transporter/client"
+	"github.com/bbjj040471/transporter/client"
 )
 
 var (

@@ -9,8 +9,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/log"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/compose/mejson"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/message"
+	"github.com/bbjj040471/mejson"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/commitlog"
+	"github.com/bbjj040471/transporter/message"
 )
 
 type resumeData struct {

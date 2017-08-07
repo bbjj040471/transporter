@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/message"
+	"github.com/bbjj040471/transporter/client"
+	"github.com/bbjj040471/transporter/message"
 )
 
 var _ client.Writer = &Writer{}

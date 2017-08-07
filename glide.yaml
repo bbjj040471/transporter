@@ -1,8 +1,8 @@
-package: github.com/compose/transporter
+package: github.com/bbjj040471/transporter
 import:
 - package: github.com/Sirupsen/logrus
   version: ^0.11.0
-- package: github.com/compose/mejson
+- package: github.com/bbjj040471/mejson
 - package: github.com/hashicorp/go-version
 - package: github.com/lib/pq
 - package: github.com/mitchellh/cli

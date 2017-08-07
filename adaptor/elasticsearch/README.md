@@ -26,7 +26,7 @@ module.exports = function(msg) {
 
 ***NOTE***
 By using the elasticsearch auto-generated `_id`, it is not currently possible for transporter to
-process update/delete operations. Future work is planned in [#39](https://github.com/compose/transporter/issues/39)
+process update/delete operations. Future work is planned in [#39](https://github.com/bbjj040471/transporter/issues/39)
 to address this problem.
 
 ### Configuration:
